@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   nginx:
@@ -18,8 +18,6 @@ services:
     links:
       - client:base_client
       - backend:base_web_api
-    volumes:
-      - ./nginx/build/.:/usr/share/nginx/html/build
 
   backend:
     image: base_web_api
@@ -44,8 +42,8 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
     volumes:
-      - ./client/src/.:/app/src
-      - ./client/public/.:/app/public
+      - ./client/public/.:/app/public/
+      - ./client/src/.:/app/src/
 
 networks:
   base_app_network:

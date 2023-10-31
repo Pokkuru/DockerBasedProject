@@ -1,47 +1,41 @@
 {
-	"name": "AIIC devcontainer client",
-	"dockerComposeFile": [
-		"../docker-compose.yml"
-	],
-	"service": "backend",
-	"runServices": [
-		"nginx",
-		"client",
-		"backend"
-	],
-	"workspaceFolder": "/app",
-	"settings": {
-		"terminal.integrated.profiles.linux": {
-			"bash": {
-				"path": "bash",
-				"icon": "terminal-bash"
-			},
-			"zsh": {
-				"path": "zsh"
-			}
-		}
-	},
-	"extensions": [
-		"2gua.rainbow-brackets",
-		"formulahendry.auto-close-tag",
-		"formulahendry.auto-rename-tag",
-		"christian-kohler.path-intellisense",
-		"mosapride.zenkaku",
-		"oderwat.indent-rainbow",
-		"VisualStudioExptTeam.vscodeintellicode",
-		"VisualStudioExptTeam.intellicode-api-usage-examples",
-		"IBM.output-colorizer",
-		"ionutvmi.path-autocomplete",
-		"christian-kohler.path-intellisense",
-		"esbenp.prettier-vscode",
-		"shardulm94.trailing-spaces",
-		"davidhouchin.whitespace-plus",
-		"ms-python.vscode-pylance",
-		"ms-python.python",
-		"donjayamanne.python-environment-manager",
-		"donjayamanne.python-extension-pack",
-		"KevinRose.vsc-python-indent",
-		"davidhouchin.whitespace-plus"
-	],
-	"remoteUser": "root"
+  "name": "devcontainer client",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "backend",
+  "runServices": ["nginx", "client", "backend"],
+  "workspaceFolder": "/app",
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "bash",
+        "icon": "terminal-bash"
+      },
+      "zsh": {
+        "path": "zsh"
+      }
+    }
+  },
+  "extensions": [
+    "2gua.rainbow-brackets",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "mosapride.zenkaku",
+    "oderwat.indent-rainbow",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "VisualStudioExptTeam.intellicode-api-usage-examples",
+    "IBM.output-colorizer",
+    "ionutvmi.path-autocomplete",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "shardulm94.trailing-spaces",
+    "davidhouchin.whitespace-plus",
+    "ms-python.vscode-pylance",
+    "ms-python.python",
+    "donjayamanne.python-environment-manager",
+    "donjayamanne.python-extension-pack",
+    "KevinRose.vsc-python-indent",
+    "davidhouchin.whitespace-plus"
+  ],
+  "remoteUser": "root"
 }

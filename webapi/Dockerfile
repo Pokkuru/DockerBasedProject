@@ -1,4 +1,4 @@
-FROM python:3.11.0-slim-bullseye
+FROM python:3.12.0-slim-bookworm
 
 WORKDIR /app
 RUN apt-get update -y && apt-get upgrade -y
